@@ -37,24 +37,7 @@ export function Shutdown() {
 export function DiscoveryService() {
 	this.IconUrl = "https://assets.signalrgb.com/brands/custom/lianli/logo.png";
 
-	this.timeSinceLastReq = 0;
-	this.Retries = 5;
-	this.RetryCount = 0;
-  this.initialized = false;
-
-	this.Initialize = function() {
-        this.Discovered();
-        this.initialized = true;
-	};
-
-
-	this.Update = function() {
-    // Autodiscover.
-    if (!this.initialized){
-      this.Discovered();
-      this.initialized = true;
-    }    
-	};
+    this.initialized = true;
 
 }
 
