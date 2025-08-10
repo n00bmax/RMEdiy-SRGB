@@ -16,16 +16,6 @@ export function ControllableParameters(){
 /* global
 controller:readonly
 */
-var vLedNames = [ "Led 1" ]; 
-var vLedPositions = [ [0,0] ];
-
-export function LedNames() {
-
-}
-
-export function LedPositions() {
-
-}
 
 export function Initialize() {
 	device.setName(controller.name);
